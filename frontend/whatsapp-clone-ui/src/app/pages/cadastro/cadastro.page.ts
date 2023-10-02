@@ -34,7 +34,9 @@ export class CadastroPage implements OnInit{
   }
 
   validateNumber(): boolean {
-    const numberPhone = /^\(\d{2}\)\s\d{5}\d{4}$/;
-    return numberPhone.test(this.formData.numero);
+    let cleanNumber = this.formData.numero.replace(/[^0-9]+/g, "");
+    let min = 10;
+    let max = 15;
+    return cleanNumber.length >= min && cleanNumber.length <= max;
   }
 }
