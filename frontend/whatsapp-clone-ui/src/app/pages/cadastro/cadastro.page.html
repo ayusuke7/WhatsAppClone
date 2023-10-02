@@ -6,17 +6,15 @@
               <p>Create a free account.</p>
           </div>
           <div class="inputs">
-              <input type="text" placeholder="Name">
-              <input type="number" placeholder="Number">
+            <input type="text" placeholder="Enter your name" id="name" name="name"pattern="[A-Za-z ]+" required [(ngModel)]="formData.name">
+
+            <input type="text" placeholder="(11) 914498422" id="number" name="number" pattern="/^\(\d{2}\)\s\d{5}\d{4}$/" required [(ngModel)]="formData.numero">
           </div>
           <button ngClass="button" (click)="navegateToChat()">
             Sign up
           </button>
       </form>
-
-
   </div>
-
 </div>
 
 

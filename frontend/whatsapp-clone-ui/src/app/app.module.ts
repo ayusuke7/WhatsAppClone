@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CadastroPage } from './pages/cadastro/cadastro.page';
 import { ChatPage } from './pages/chat/chat.page';
 import { ContactItemComponent } from './components/contact-item/contact-item.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactItemComponent } from './components/contact-item/contact-item.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
