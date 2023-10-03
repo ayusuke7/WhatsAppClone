@@ -1,0 +1,18 @@
+.nav__bar {
+  display: flex;
+  background: #222C32;
+  width: 432px;
+  height: 59px;
+}
+
+.nav__bar-perfil > img {
+  width: 40px;
+  height: 40px;
+  margin: 9px 16px;
+  border-radius: 88px;
+}
+
+.nav__bar-chat {
+  margin-top: 10px;
+  color: #ffffff;
+}

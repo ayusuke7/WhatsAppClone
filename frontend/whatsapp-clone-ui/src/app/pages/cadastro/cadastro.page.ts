@@ -22,11 +22,15 @@ export class CadastroPage implements OnInit{
   }
 
   navegateToChat() {
-    if(this.validateName() && this.validateNumber()) {
-      this.router.navigate(['/chat'])
+    if (this.validateName() && this.validateNumber()) {
+      this.router.navigate(['/chat']);
     } else {
-      alert("Por favor, preencha todos os campos corretamente.")
+      this.validationError();
     }
+  }
+
+  private validationError() {
+    alert("Por favor, preencha todos os campos corretamente.");
   }
 
   validateName(): boolean {
