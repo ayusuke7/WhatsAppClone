@@ -7,10 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./cadastro.page.css']
 })
 export class CadastroPage implements OnInit{
+
+  imageLogo = "assets/image-global/logo.png.png"
+  imageAltLogo = "Image View"
+
   @Input()
   public formData = {
     name: '',
-    numero: ''
+    phone: ''
   };
 
   constructor(
@@ -30,7 +34,7 @@ export class CadastroPage implements OnInit{
   }
 
   private validationError() {
-    alert("Por favor, preencha todos os campos corretamente.");
+    alert("Please fill in all fields correctly.");
   }
 
   validateName(): boolean {
@@ -38,9 +42,7 @@ export class CadastroPage implements OnInit{
   }
 
   validateNumber(): boolean {
-    let cleanNumber = this.formData.numero.replace(/[^0-9]+/g, "");
-    let min = 10;
-    let max = 15;
-    return cleanNumber.length >= min && cleanNumber.length <= max;
+    let cleanNumber = this.formData.phone.replace(/[^0-9]+/g, "");
+    return cleanNumber.length >= 10 && cleanNumber.length <= 15;
   }
 }

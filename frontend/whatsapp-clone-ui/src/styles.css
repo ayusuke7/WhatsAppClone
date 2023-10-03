@@ -10,11 +10,6 @@ body {
   font-family: 'Segoe UI';
 }
 
-.background-image {
-  background-position: center;
-  background-size: cover;
-}
-
 .background-image-main {
   background-image: url(https://s3-alpha-sig.figma.com/img/8b3e/4683/167e4b568f396ccee93469433bc3059b?Expires=1697414400&Signature=ZtT881JA-PQlhB-w-xz4Q0kyuDE03s-VVihwIN6FgVO8B-2fNwVMLG5hJyX16ahBQK2luuNUpI0rxhtPIBedT41JO1DoqWFKXpHO4g8zAMBKm5CprGrgtQFoHlJZ7pKcRA1NMT1RZT03WPWP5MWPwPdDoyKGmHDw5HUCbgTYvEJqouXy6U9WN1XD6Czz8iHPtZRs5WEp3EJylcBBdSK5MO4Tu3ZZPRtMP9AZium~we3f74Z-Rn2Lkp2MwXljtYA6zYZ3JiNFX3t9qcI8vV0TQ5gK0u-Y6Bzb0sCyGJdDTRtSk5KA7pwBqVKuCqwk2ug6mC5ItHSbQuSZDgzyOY5TkA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
   background-position: center;

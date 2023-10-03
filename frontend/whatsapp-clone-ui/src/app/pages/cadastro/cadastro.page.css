@@ -1,3 +1,30 @@
+.top__bar {
+  background-color: #00a884;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding-left: 20px;
+  height: 222px;
+  display: flex;
+  align-items: center;
+}
+
+.top__bar-text-whatsapp {
+  font-family: 'Segoe UI Semibold';
+  font-weight: 500px;
+  font-size: 14px;
+  margin-left: 14px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.top__bar-logo {
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+}
+
 .main {
   width: 100%;
   height: 100vh;
@@ -8,8 +35,8 @@
 }
 
 .container {
-  max-width: 300px;
-  border-radius: 10px;
+  max-width: 600px;
+  border-radius: 3px;
   margin: auto;
 }
 
@@ -20,7 +47,7 @@ form {
   padding: 32px 24px 24px;
   gap: 16px;
   text-align: center;
-  background-color: #29805e83;;
+  background-color: #ffffff;
 }
 
 form .head {
@@ -37,7 +64,7 @@ form .head span {
 
 form .head p {
   font-size: 1.1rem;
-  color: #e7e4e4;
+  color: #aca9a9;
 }
 
 form .inputs {
@@ -97,7 +124,6 @@ transform: translateX(-50%) scaleY(1) scaleX(1.45);
 top: 180%;
 width: 160%;
 height: 190%;
-background-color: #084623;
 border-radius: 50%;
 display: block;
 transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
@@ -121,3 +147,6 @@ background-color: #017561;
 transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
+.background-bottom {
+  background-color: #0c1317;
+}

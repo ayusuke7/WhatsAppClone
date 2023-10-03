@@ -1,20 +1,31 @@
-<div class="main background-image">
-  <div class="container">
-      <form>
-          <div class="head">
-              <span>Sign up</span>
-              <p>Create a free account.</p>
-          </div>
-          <div class="inputs">
-            <input type="text" placeholder="Enter your name" id="name" name="name"pattern="[A-Za-z ]+" required [(ngModel)]="formData.name">
+<div class="background-bottom">
+  <div>
+    <div class="top__bar">
+      <span class="top__bar-logo-whatsapp">
+        <img class="top__bar-logo" src="{{imageLogo}}" alt="{{imageAltLogo}}">
+      </span>
+      <div class="top__bar-text-whatsapp">
+        Whatsapp Web
+      </div>
+    </div>
+  </div>
 
-            <input type="text" placeholder="(11) 914498422" id="number" name="number" required [(ngModel)]="formData.numero">
-          </div>
-          <button ngClass="button" (click)="navegateToChat()">
-            Sign up
-          </button>
-      </form>
+  <div class="main">
+    <div class="container">
+        <form>
+            <div class="head">
+                <span>Sign up</span>
+                <p>Create a free account.</p>
+            </div>
+            <div class="inputs">
+              <input type="text" placeholder="Enter your name" id="name" name="name"pattern="[A-Za-z ]+" required [(ngModel)]="formData.name">
+              <input type="text" placeholder="(11) 914498422" id="number" name="number" required [(ngModel)]="formData.phone">
+            </div>
+            <button ngClass="button" (click)="navegateToChat()">
+              Sign up
+            </button>
+        </form>
+    </div>
   </div>
 </div>
-
 
