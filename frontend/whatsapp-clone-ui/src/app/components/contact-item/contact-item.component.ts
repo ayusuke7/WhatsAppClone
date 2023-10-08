@@ -8,10 +8,12 @@ import { Router } from '@angular/router';
 })
 
 export class ContactItemComponent implements OnInit{
-  imageSrc: String = 'assets/image-profile/avatar.png'
-  imageAlt: String = 'Profile'
-  imageView: String = "assets/image-chat/double-checkk.png"
-  imageAltView: String = "Image View"
+
+  imageSrc = 'assets/image-profile/avatar.png'
+  imageAlt = 'Profile'
+  imageView = "assets/image-chat/double-checkk.png"
+  imageAltView = "Image View"
+
 
   constructor(
     private router: Router

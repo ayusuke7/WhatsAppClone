@@ -11,10 +11,11 @@ import { ContactItemComponent } from './components/contact-item/contact-item.com
 import { FormsModule } from '@angular/forms';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { ContainerChatComponent } from './components/container-chat/container-chat.component';
-import { BottomBarChatComponent } from './components/bottom-bar-chat/bottom-bar-chat.component';
-import { NavBarChatComponent } from './components/nav-bar-chat/nav-bar-chat.component';
-import { DisplayChatComponent } from './components/display-chat/display-chat.component';
+import { ContainerChatComponent } from './components/chat-container/container-chat.component';
+import { BottomBarChatComponent } from './components/chat-bottom-bar/bottom-bar-chat.component';
+import { NavBarChatComponent } from './components/chat-nav-bar/nav-bar-chat.component';
+import { DisplayChatComponent } from './components/chat-display/display-chat.component';
+import { ChatScreenComponent } from './components/chat-screen/chat-screen.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DisplayChatComponent } from './components/display-chat/display-chat.com
     ContainerChatComponent,
     BottomBarChatComponent,
     NavBarChatComponent,
-    DisplayChatComponent
+    DisplayChatComponent,
+    ChatScreenComponent
   ],
   imports: [
     BrowserModule,

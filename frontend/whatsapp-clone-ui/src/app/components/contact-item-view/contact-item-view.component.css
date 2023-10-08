@@ -1,3 +1,5 @@
+
+/* TESTE */
 .contact__item-main {
   display: flex;
   margin-top: 5px;
@@ -21,7 +23,7 @@
   color: #EAEDEF;
   font-family: Arial;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .contact__item-View{
@@ -29,24 +31,21 @@
 }
 
 .contact__item-message{
-  color: #e4e4e4;
+  color: #d6d5d5;
   margin: 6px;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .contact__item-hours {
   color: #4BA586;
   position: absolute;
   z-index: 1;
-  top: 196px;
+  top: 128px;
   left: 400px;
   font-size: 12px;
   font-style: normal;
+  font-weight: 400;
   line-height: normal;
-}
-
-.contact__item-main:hover {
-  background-color: #212d35;
 }
 
