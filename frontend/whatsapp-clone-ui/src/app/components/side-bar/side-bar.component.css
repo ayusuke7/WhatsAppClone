@@ -1,5 +1,7 @@
 .side__bar-main {
   background: #131B20;
   width: 432px;
-  height: 841px;
+  height: 740px;
+  margin: 40px 0 20px 20px;
+  border-radius: 5px 0 0 5px;
 }

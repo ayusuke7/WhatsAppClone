@@ -11,6 +11,10 @@ import { ContactItemComponent } from './components/contact-item/contact-item.com
 import { FormsModule } from '@angular/forms';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { ContainerChatComponent } from './components/container-chat/container-chat.component';
+import { BottomBarChatComponent } from './components/bottom-bar-chat/bottom-bar-chat.component';
+import { NavBarChatComponent } from './components/nav-bar-chat/nav-bar-chat.component';
+import { DisplayChatComponent } from './components/display-chat/display-chat.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     ContactItemViewComponent,
     SideBarComponent,
     NavBarComponent,
-    ContactItemComponent
+    ContactItemComponent,
+    ContainerChatComponent,
+    BottomBarChatComponent,
+    NavBarChatComponent,
+    DisplayChatComponent
   ],
   imports: [
     BrowserModule,

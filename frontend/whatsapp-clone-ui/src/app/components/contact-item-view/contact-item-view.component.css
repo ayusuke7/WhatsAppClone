@@ -1,12 +1,14 @@
 .contact__item-main {
   display: flex;
+  margin-top: 5px;
+  padding-bottom: 3px;
 }
 
-.contact__item-main .contact__item-image {
+.contact__item-image {
   margin: 9px 16px;
 }
 
-.contact__item-main .contact__item-imageView {
+.contact__item-imageView {
   width: 18px;
   height: 18px;
   margin-top: 5px;
@@ -27,7 +29,7 @@
 }
 
 .contact__item-message{
-  color: #FFF;
+  color: #e4e4e4;
   margin: 6px;
   font-size: 14px;
   font-weight: 700;
@@ -35,11 +37,16 @@
 
 .contact__item-hours {
   color: #4BA586;
-  margin: 9px 20px 6px 140px;
-  font-family: Arial;
+  position: absolute;
+  z-index: 1;
+  top: 196px;
+  left: 400px;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
+}
+
+.contact__item-main:hover {
+  background-color: #212d35;
 }
 

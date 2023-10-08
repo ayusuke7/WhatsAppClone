@@ -1,0 +1,25 @@
+.nav_bar_chat {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 4;
+  top: 40px;
+
+  background-color: #262f35ea;
+  width: 826px;
+  height: 69px;
+  border-radius: 0 5px 0 0;
+}
+
+.nav_bar_chat-profile {
+  display: flex;
+  padding-left: 12px;
+}
+
+.nav_bar_chat-name {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  color: #fff;
+  font-weight: 400;
+}

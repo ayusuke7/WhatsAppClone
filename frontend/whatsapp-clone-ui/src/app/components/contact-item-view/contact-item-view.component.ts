@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactItemViewComponent implements OnInit{
   imageSrc = 'assets/image-profile/avatar.png'
   imageAlt = 'Profile'
-  imageView = "assets/image-chat/double-check.png"
+  imageView = "assets/image-chat/double-checkk.png"
   imageAltView = "Image View"
 
   ngOnInit(): void {

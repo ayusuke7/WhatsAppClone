@@ -13,17 +13,10 @@ export class ContactItemComponent implements OnInit{
   imageView: String = "assets/image-chat/double-checkk.png"
   imageAltView: String = "Image View"
 
-  isOpenConversation:boolean = false
-
   constructor(
     private router: Router
   ){}
 
   ngOnInit(): void {}
 
-  // testando a rota para abrir a conversa pessoal
-  openConversation():void {
-    this.router.navigate(['/conversation'])
-    this.isOpenConversation = !this.isOpenConversation
-  }
 }

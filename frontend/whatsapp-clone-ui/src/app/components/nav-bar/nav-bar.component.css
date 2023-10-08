@@ -2,7 +2,9 @@
   display: flex;
   background: #222C32;
   width: 432px;
-  height: 59px;
+  height: 69px;
+  align-items: center;
+  border-radius: 5px 0 0 0;
 }
 
 .nav__bar-perfil > img {
@@ -12,7 +14,7 @@
   border-radius: 88px;
 }
 
-.nav__bar-chat {
-  margin-top: 10px;
+.nav__bar-text {
+  margin-top: -4px;
   color: #ffffff;
 }
