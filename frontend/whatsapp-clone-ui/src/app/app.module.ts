@@ -16,6 +16,7 @@ import { BottomBarChatComponent } from './components/chat-bottom-bar/bottom-bar-
 import { NavBarChatComponent } from './components/chat-nav-bar/nav-bar-chat.component';
 import { DisplayChatComponent } from './components/chat-display/display-chat.component';
 import { ChatScreenComponent } from './components/chat-screen/chat-screen.component';
+import { ChatConversationComponent } from './pages/chat-conversation/chat-conversation.page';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ChatScreenComponent } from './components/chat-screen/chat-screen.compon
     BottomBarChatComponent,
     NavBarChatComponent,
     DisplayChatComponent,
-    ChatScreenComponent
+    ChatScreenComponent,
+    ChatConversationComponent
   ],
   imports: [
     BrowserModule,
