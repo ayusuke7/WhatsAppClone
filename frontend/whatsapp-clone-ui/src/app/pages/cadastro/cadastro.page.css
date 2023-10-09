@@ -38,6 +38,7 @@
   max-width: 600px;
   border-radius: 3px;
   margin: auto;
+  z-index: 2;
 }
 
 form {
@@ -65,6 +66,22 @@ form .head span {
 form .head p {
   font-size: 1.1rem;
   color: #aca9a9;
+}
+
+.image-preview {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.image-preview > img {
+  width: 101px;
+  height: 101px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
 }
 
 form .inputs {
@@ -102,51 +119,77 @@ form .inputs input {
 }
 
 .button:before {
-content: "";
-position: absolute;
-left: 50%;
-transform: translateX(-50%) scaleY(1) scaleX(1.25);
-top: 100%;
-width: 140%;
-height: 180%;
-background-color: rgba(0, 0, 0, 0.05);
-border-radius: 50%;
-display: block;
-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-z-index: -1;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
 }
 
 .button:after {
-content: "";
-position: absolute;
-left: 55%;
-transform: translateX(-50%) scaleY(1) scaleX(1.45);
-top: 180%;
-width: 160%;
-height: 190%;
-border-radius: 50%;
-display: block;
-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-z-index: -1;
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
 }
 
 .button:hover {
-color: #ffffff;
-border: 1px solid #017561;
+  color: #ffffff;
+  border: 1px solid #017561;
 }
 
 .button:hover:before {
-top: -35%;
-background-color: #017561;
-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  top: -35%;
+  background-color: #017561;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 .button:hover:after {
-top: -45%;
-background-color: #017561;
-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  top: -45%;
+  background-color: #017561;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 .background-bottom {
   background-color: #0c1317;
+}
+
+/* CSS UPLOAD PROFILE */
+.input-div {
+  position: relative;
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  border: 1px solid #017561;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: #017561;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }

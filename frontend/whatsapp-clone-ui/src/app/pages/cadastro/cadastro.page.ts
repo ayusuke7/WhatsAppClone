@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-cadastro.page',
@@ -7,6 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./cadastro.page.css']
 })
 export class CadastroPage implements OnInit{
+  selectedFile: File | null = null;
+  imagePreview: string | null = null; // Variável para armazenar a pré-visualização
 
   imageLogo = "assets/image-global/logo.png.png"
   imageAltLogo = "Image View"
@@ -18,12 +21,11 @@ export class CadastroPage implements OnInit{
   };
 
   constructor(
+    private http: HttpClient,
     private router: Router
   ){}
 
-  ngOnInit(): void {
-
-  }
+  ngOnInit(): void {}
 
   navegateToChat() {
     if (this.validateName() && this.validateNumber()) {
@@ -45,4 +47,36 @@ export class CadastroPage implements OnInit{
     let cleanNumber = this.formData.phone.replace(/[^0-9]+/g, "");
     return cleanNumber.length >= 10 && cleanNumber.length <= 15;
   }
+
+  // Validação de imagem do perfil
+  onFileSelected(event: any) {
+    this.selectedFile = event.target.files[0];
+
+    if (this.selectedFile) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const resultado = e.target?.result;
+        if (typeof resultado === 'string') {
+          this.imagePreview = resultado;
+        } else {
+          this.imagePreview = null;
+        }
+      };
+      reader.readAsDataURL(this.selectedFile);
+    } else {
+      this.imagePreview = null;
+    }
+  }
+
+  uploadProfilePhoto() {
+    if (this.selectedFile) {
+      const formData = new FormData();
+      formData.append('photo', this.selectedFile);
+
+      this.http.post('/api/updateProfilePhoto', formData).subscribe(response => {
+        // Lidar com a resposta do servidor
+      });
+    }
+  }
 }
+

@@ -17,6 +17,7 @@ import { NavBarChatComponent } from './components/chat-nav-bar/nav-bar-chat.comp
 import { DisplayChatComponent } from './components/chat-display/display-chat.component';
 import { ChatScreenComponent } from './components/chat-screen/chat-screen.component';
 import { ChatConversationComponent } from './pages/chat-conversation/chat-conversation.page';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ChatConversationComponent } from './pages/chat-conversation/chat-conver
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
