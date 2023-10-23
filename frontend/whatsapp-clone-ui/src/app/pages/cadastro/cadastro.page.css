@@ -1,4 +1,4 @@
-.top__bar {
+ .top__bar {
   background-color: #00a884;
   position: absolute;
   top: 0;
@@ -6,8 +6,12 @@
   width: 100%;
   padding-left: 20px;
   height: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top__bar-text-whatsapp {
@@ -29,9 +33,17 @@
   width: 100%;
   height: 100vh;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
@@ -42,9 +54,16 @@
 }
 
 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 32px 24px 24px;
   gap: 16px;
   text-align: center;
@@ -52,8 +71,13 @@ form {
 }
 
 form .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
 }
 
@@ -78,10 +102,28 @@ form .head p {
   width: 101px;
   height: 101px;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 3;
+}
+
+.remove-image-button{
+  display: flex;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  position: absolute;
+  top: 75px;
+  left: 77px;
+  z-index: 5;
+  border-radius:#015a4b;
 }
 
 form .inputs {
@@ -109,6 +151,8 @@ form .inputs input {
   padding: 8px 24px;
   border: 1px solid #ffffffb4;
   border-radius: 20px;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   position: relative;
   overflow: hidden;
@@ -122,13 +166,17 @@ form .inputs input {
   content: "";
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  -webkit-transform: translateX(-50%) scaleY(1) scaleX(1.25);
+      -ms-transform: translateX(-50%) scaleY(1) scaleX(1.25);
+          transform: translateX(-50%) scaleY(1) scaleX(1.25);
   top: 100%;
   width: 140%;
   height: 180%;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
   display: block;
+  -webkit-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -1;
 }
@@ -137,12 +185,16 @@ form .inputs input {
   content: "";
   position: absolute;
   left: 55%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  -webkit-transform: translateX(-50%) scaleY(1) scaleX(1.45);
+      -ms-transform: translateX(-50%) scaleY(1) scaleX(1.45);
+          transform: translateX(-50%) scaleY(1) scaleX(1.45);
   top: 180%;
   width: 160%;
   height: 190%;
   border-radius: 50%;
   display: block;
+  -webkit-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  -o-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
   transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
   z-index: -1;
 }
@@ -155,13 +207,17 @@ form .inputs input {
 .button:hover:before {
   top: -35%;
   background-color: #017561;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  -webkit-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+      -ms-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+          transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 .button:hover:after {
   top: -45%;
   background-color: #017561;
-  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  -webkit-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+      -ms-transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+          transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 .background-bottom {
@@ -175,9 +231,15 @@ form .inputs input {
   height: 99px;
   border-radius: 50%;
   border: 1px solid #017561;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .icon {

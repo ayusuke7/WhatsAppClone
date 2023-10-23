@@ -1,4 +1,10 @@
 <!-- Minha segunda tela com uma conversa aberta-->
-<app-nav-bar-chat></app-nav-bar-chat>
+<div class="chat-screen">
+<app-nav-bar-chat
+  [imageSrc]="'assets/image-profile/avatar.png'"
+  [imageAlt]="'Profile'"
+  [name]="'John (não é o mesmo john do side-bar ainda)'">
+</app-nav-bar-chat>
 <app-display-chat></app-display-chat>
 <app-bottom-bar-chat></app-bottom-bar-chat>
+</div>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar-chat',
@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar-chat.component.css']
 })
 export class NavBarChatComponent implements OnInit{
-
-  imageSrc = 'assets/image-profile/avatar.png'
-  imageAlt = 'Profile image'
+  @Input()
+  imageSrc: string = 'assets/image-profile/avatar.png'
+  @Input()
+  imageAlt:String = 'Profile image'
+  @Input()
+  name: string = 'Seu nome'
 
   constructor(){}
   ngOnInit(): void {}

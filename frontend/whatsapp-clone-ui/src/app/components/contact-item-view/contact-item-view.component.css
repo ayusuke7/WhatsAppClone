@@ -1,7 +1,10 @@
 .contact__item-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  position: relative;
   margin-top: 5px;
-  padding-bottom: 3px;
+  padding: 5px;
 }
 
 .contact__item-image {
@@ -12,8 +15,13 @@
   width: 18px;
   height: 18px;
   margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact__item-name {
@@ -25,6 +33,8 @@
 }
 
 .contact__item-View{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -39,8 +49,8 @@
   color: #4BA586;
   position: absolute;
   z-index: 1;
-  top: 128px;
-  left: 400px;
+  top: 17px;
+  left: 373px;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

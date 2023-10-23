@@ -1,9 +1,13 @@
 .nav__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #222C32;
   width: 432px;
   height: 69px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 5px 0 0 0;
 }
 

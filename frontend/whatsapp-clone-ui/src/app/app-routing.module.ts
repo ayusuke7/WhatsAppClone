@@ -12,9 +12,9 @@ const routes: Routes = [
   {
     path: 'chat', component: ChatPage
   },
-  {
-    path: 'conversation', component: ChatConversationComponent
-  }
+  // {
+  //   path: 'conversation', component: ChatConversationComponent
+  // }
 ];
 
 @NgModule({

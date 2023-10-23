@@ -1,0 +1,4 @@
+.chat-screen {
+  display: flex;
+  justify-content: end;
+}

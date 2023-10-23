@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatPage implements OnInit{
 
-  constructor(){}
-  ngOnInit(): void {
+  showContactItem = true;
+  showContactItemView = false;
 
+  constructor(){}
+  ngOnInit(): void {}
+
+  toggleComponent() {
+    this.showContactItem = !this.showContactItem;
+    this.showContactItemView = !this.showContactItemView;
   }
 
 }

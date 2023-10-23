@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,11 +9,20 @@ import { Router } from '@angular/router';
 
 export class ContactItemComponent implements OnInit{
 
-  imageSrc = 'assets/image-profile/avatar.png'
-  imageAlt = 'Profile'
-  imageView = "assets/image-chat/double-checkk.png"
-  imageAltView = "Image View"
-
+  @Input()
+  name: string = "Usuario"
+  @Input()
+  imageSrc: string = "assets/image-profile/avatar.png"
+  @Input()
+  imageAlt: string = "Profile"
+  @Input()
+  imageView: string = "assets/image-chat/double-checkk.png"
+  @Input()
+  imageAltView: string = "Image View"
+  @Input()
+  message: string = "Nova mensagem - contact-item"
+  @Input()
+  time: string = "18:35";
 
   constructor(
     private router: Router

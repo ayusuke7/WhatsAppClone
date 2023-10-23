@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactItemComponent } from './contact-item-view.component';
+import { ContactItemViewComponent } from './contact-item-view.component';
 
 describe('ContactItemComponent', () => {
-  let component: ContactItemComponent;
-  let fixture: ComponentFixture<ContactItemComponent>;
+  let component: ContactItemViewComponent;
+  let fixture: ComponentFixture<ContactItemViewComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ContactItemComponent]
+      declarations: [ContactItemViewComponent]
     });
-    fixture = TestBed.createComponent(ContactItemComponent);
+    fixture = TestBed.createComponent(ContactItemViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

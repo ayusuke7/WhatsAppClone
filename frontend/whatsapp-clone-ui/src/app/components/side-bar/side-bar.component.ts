@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit{
 
-  constructor(){
+  showConversation = false;
 
-  }
+  constructor(){}
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
-
+  toggleComponent() {
+    this.showConversation = !this.showConversation;
   }
 
 }

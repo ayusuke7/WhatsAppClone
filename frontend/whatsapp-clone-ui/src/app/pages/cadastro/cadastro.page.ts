@@ -48,6 +48,16 @@ export class CadastroPage implements OnInit{
     return cleanNumber.length >= 10 && cleanNumber.length <= 15;
   }
 
+  // Método para remover a Preview da imagem
+  removeImage() {
+    // Limpando a pré-visualização da imagem e redefine o valor do input de arquivo
+    this.imagePreview = null;
+    const fileInput = document.getElementById('photo') as HTMLInputElement;
+    if (fileInput) {
+      fileInput.value = '';
+    }
+  }
+
   // Validação de imagem do perfil
   onFileSelected(event: any) {
     this.selectedFile = event.target.files[0];
